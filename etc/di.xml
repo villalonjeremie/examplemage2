@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Videoscm\MailChimpImport\Api\ReaderSftpInterface" type="Videoscm\MailChimpImport\Model\Link\ReaderSftp" />
+    <preference for="Videoscm\MailChimpImport\Api\ImporterInterface" type="Videoscm\MailChimpImport\Model\Files\Importer" />
+    <preference for="Videoscm\MailChimpImport\Api\AdapterInterface" type="Videoscm\MailChimpImport\Model\Files\Adapter" />
+    <preference for="Ebizmarts\MageMonkey\Model\MCAPI" type="Videoscm\MailChimpImport\Model\MCAPI" />
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="import_ftp" xsi:type="object">Videoscm\MailChimpImport\Console\Command\ImportFtp</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Videoscm\MailChimpImport\Model\Logger\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Videoscm\MailChimpImport\Model\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">loggerImportFtp</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Videoscm\MailChimpImport\Model\Logger\Handler</item>
+            </argument>
+            <argument name="processors" xsi:type="array"></argument>
+            <argument name="transportbuilder"  xsi:type="array">
+                <item name="system" xsi:type="object">Magento\Framework\Mail\Template\TransportBuilder</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
+
+

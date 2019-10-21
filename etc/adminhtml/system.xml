@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mailchimp_import_tab" translate="label" sortOrder="1000">
+            <label>MailChimp Import</label>
+        </tab>
+        <section id="mailchimp_import_conf" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>MailChimp Import</label>
+            <tab>mailchimp_import_tab</tab>
+            <resource>Videoscm_MailChimpImport::config_videoscm_mailchimpimport</resource>
+            <group id="videoscm_mailchimpimport_sftp_access" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>SFTP Access</label>
+                <field id="videoscm_mailchimpimport_enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable MailChimImport</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="videoscm_mailchimpimport_host" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+                    <label>Host</label>
+                </field>
+                <field id="videoscm_mailchimpimport_user" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label" type="text">
+                    <label>User</label>
+                </field>
+                <field id="videoscm_mailchimpimport_password" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="30" translate="label" type="text">
+                    <label>Password</label>
+                </field>
+                <field id="videoscm_mailchimpimport_port" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="40" translate="label" type="text">
+                    <label>Port</label>
+                </field>
+            </group>
+            <group id="videoscm_mailchimpimport_access" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>MailChimp API Access</label>
+                <field id="videoscm_mailchimpimport_access_login" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+                    <label>Login</label>
+                </field>
+                <field id="videoscm_mailchimpimport_access_key" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label" type="text">
+                    <label>Key</label>
+                </field>
+                <field id="videoscm_mailchimpimport_access_url" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="30" translate="label" type="text">
+                    <label>Url</label>
+                </field>
+            </group>
+            <group id="videoscm_mailchimpimport_tables" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Tables MailChimp Configuration</label>
+                <field id="videoscm_mailchimpimport_tables_superclub" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+                    <label>Name Table Superclub</label>
+                </field>
+                <field id="videoscm_mailchimpimport_tables_microplay" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label" type="text">
+                    <label>Name Table Microplay</label>
+                </field>
+            </group>
+            <group id="videoscm_mailchimpimport_csv" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>CSV Configuration</label>
+                <field id="videoscm_mailchimpimport_csv_separator" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+                    <label>Separator Field CSV</label>
+                </field>
+                <field id="videoscm_mailchimpimport_csv_prefix" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label" type="text">
+                    <label>Prefix File Name</label>
+                </field>
+                <field id="videoscm_mailchimpimport_csv_count_column" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="30" translate="label" type="text">
+                    <label>Count Column original CSV </label>
+                </field>
+            </group>
+            <group id="videoscm_mailchimpimport_status_members" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Status Members</label>
+                <field id="videoscm_mailchimpimport_status_if_new" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Status Members If New</label>
+                    <source_model>Videoscm\MailChimpImport\Model\Config\Source\StatusList</source_model>
+                </field>
+                <field id="videoscm_mailchimpimport_status" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Status Members</label>
+                    <source_model>Videoscm\MailChimpImport\Model\Config\Source\StatusList</source_model>
+                </field>
+            </group>
+            <group id="videoscm_mailchimpimport_mail_information" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Information Mail</label>
+                <field id="videoscm_mailchimpimport_mail_from" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+                    <label>Mail From</label>
+                </field>
+                <field id="videoscm_mailchimpimport_mail_to" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label" type="text">
+                    <label>Mails To</label>
+                    <comment>
+                        <![CDATA[For Multi Receiver insert ',' between mail]]>
+                    </comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

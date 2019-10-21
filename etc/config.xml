@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <mailchimp_import_conf>
+            <videoscm_mailchimpimport_sftp_access>
+                <videoscm_mailchimpimport_enabled>0</videoscm_mailchimpimport_enabled>
+                <videoscm_mailchimpimport_host>192.99.222.178</videoscm_mailchimpimport_host>
+                <videoscm_mailchimpimport_user>videoscmftp</videoscm_mailchimpimport_user>
+                <videoscm_mailchimpimport_password>*******</videoscm_mailchimpimport_password>
+                <videoscm_mailchimpimport_port>22</videoscm_mailchimpimport_port>
+            </videoscm_mailchimpimport_sftp_access>
+            <videoscm_mailchimpimport_access>
+                <videoscm_mailchimpimport_access_login>lesuperclub</videoscm_mailchimpimport_access_login>
+                <videoscm_mailchimpimport_access_key>********************</videoscm_mailchimpimport_access_key>
+                <videoscm_mailchimpimport_access_url>https://us16.api.mailchimp.com/3.0/</videoscm_mailchimpimport_access_url>
+            </videoscm_mailchimpimport_access>
+            <videoscm_mailchimpimport_tables>
+                <videoscm_mailchimpimport_tables_superclub>Vidéotron le superclub Test 3</videoscm_mailchimpimport_tables_superclub>
+                <videoscm_mailchimpimport_tables_microplay>Microplay Test 3</videoscm_mailchimpimport_tables_microplay>
+            </videoscm_mailchimpimport_tables>
+            <videoscm_mailchimpimport_csv>
+                <videoscm_mailchimpimport_csv_separator>;</videoscm_mailchimpimport_csv_separator>
+                <videoscm_mailchimpimport_csv_prefix>Export</videoscm_mailchimpimport_csv_prefix>
+                <videoscm_mailchimpimport_csv_count_column>21</videoscm_mailchimpimport_csv_count_column>
+            </videoscm_mailchimpimport_csv>
+            <videoscm_mailchimpimport_status_members>
+                <videoscm_mailchimpimport_status_if_new>unsubscribed</videoscm_mailchimpimport_status_if_new>
+                <videoscm_mailchimpimport_status>unsubscribed</videoscm_mailchimpimport_status>
+            </videoscm_mailchimpimport_status_members>
+            <videoscm_mailchimpimport_mail_information>
+                <videoscm_mailchimpimport_mail_from>info@o2web.ca</videoscm_mailchimpimport_mail_from>
+                <videoscm_mailchimpimport_mail_to>jvillalon@o2web.ca,sboutin@o2web.ca,villalon.jeremie@gmail.com</videoscm_mailchimpimport_mail_to>
+            </videoscm_mailchimpimport_mail_information>
+        </mailchimp_import_conf>
+        <datas>
+            <fields>
+                <group_id>groupId</group_id>
+                <account>Account</account>
+                <email>Email</email>
+                <store_name>StoreName</store_name>
+                <firstname>FirstName</firstname>
+                <lastname>LastName</lastname>
+                <language>langCode</language>
+                <need_newsletter>needNewsLetter</need_newsletter>
+                <invoice_date>InvoiceDate</invoice_date>
+                <category>Category</category>
+                <sub_category>Subcategory</sub_category>
+                <category_name>CategoryName</category_name>
+                <sub_category_name>SubcategoryName</sub_category_name>
+                <qty>Qty</qty>
+                <product_upc>ProductUPC</product_upc>
+                <product_desc>ProductDesc</product_desc>
+                <promo_upc>PromoUPC</promo_upc>
+                <promo_desc>PromoDesc</promo_desc>
+                <emp_firstname>EmpFirstName</emp_firstname>
+                <emp_lastname>EmpLastName</emp_lastname>
+                <trans_type>TransType</trans_type>
+            </fields>
+            <fields_mailchimp_superclub>
+                <store_name>No magasin</store_name>
+                <email>Email Address</email>
+                <firstname>First Name</firstname>
+                <lastname>Last Name</lastname>
+                <language>language</language>
+                <need_newsletter>NewsLetters</need_newsletter>
+                <fourk>4K</fourk>
+                <accessories>Accessories</accessories>
+                <blu_ray>Blu-Ray</blu_ray>
+                <blu_ray_3D>Blu-Ray 3D</blu_ray_3D>
+                <dvd>DVD</dvd>
+                <food>Food</food>
+                <internet>Internet</internet>
+                <repairs>Repairs</repairs>
+                <numeric>Numeric</numeric>
+                <miscellaneous>Miscellaneous</miscellaneous>
+                <mobile>Mobile</mobile>
+                <other_products>Other Products</other_products>
+                <multimedia_products>Multimedia Products</multimedia_products>
+                <services>Services</services>
+                <rent>Rent</rent>
+                <vhs>VHS</vhs>
+            </fields_mailchimp_superclub>
+            <fields_mailchimp_superclub_field>
+                <store_name>MMERGE17</store_name>
+                <email>EMAIL</email>
+                <firstname>FNAME</firstname>
+                <lastname>LNAME</lastname>
+                <language>language</language>
+                <need_newsletter>NEWSLETTER</need_newsletter>
+                <fourk>FOURK</fourk>
+                <accessories>ACCESSORIE</accessories>
+                <blu_ray>MMERGE11</blu_ray>
+                <blu_ray_3D>BRAY3D</blu_ray_3D>
+                <dvd>MMERGE9</dvd>
+                <food>FOOD</food>
+                <internet>INTERNET</internet>
+                <repairs>MSUPPORT</repairs>
+                <numeric>MSUPPORT</numeric>
+                <miscellaneous>MISCE</miscellaneous>
+                <mobile>MOBILE</mobile>
+                <other_products>MSUPPORT</other_products>
+                <multimedia_products>MPRODUCTS</multimedia_products>
+                <services>SERVICES</services>
+                <rent>RENT</rent>
+                <vhs>VHS</vhs>
+            </fields_mailchimp_superclub_field>
+            <fields_mailchimp_microplay>
+                <store_name>No magasin</store_name>
+                <email>Email Address</email>
+                <firstname>First Name</firstname>
+                <lastname>Last Name</lastname>
+                <language>language</language>
+                <need_newsletter>NewsLetters</need_newsletter>
+                <magazines>Magazines</magazines>
+                <nintendo_64>Nintendo 64</nintendo_64>
+                <nintendo_3ds>Nintendo 3DS</nintendo_3ds>
+                <nintendo_8_bit>Nintendo 8-Bit</nintendo_8_bit>
+                <nintendo_ds>Nintendo DS</nintendo_ds>
+                <nintendo_switch>Nintendo Switch</nintendo_switch>
+                <other_technology>Other Technology</other_technology>
+                <playstation>Playstation</playstation>
+                <playstation_2>Playstation 2</playstation_2>
+                <playstation_3>Playstation 3</playstation_3>
+                <playstation_4>Playstation 4</playstation_4>
+                <gb_advance>GB Advance</gb_advance>
+                <game_boy>Game Boy</game_boy>
+                <game_cube>Game Cube</game_cube>
+                <ps_vita>PS Vita</ps_vita>
+                <electronics>Electronics</electronics>
+                <super_nintendo>Super Nintendo</super_nintendo>
+                <pc>PC</pc>
+                <wii>WII</wii>
+                <wii_u>WII U</wii_u>
+                <xbox>XBox</xbox>
+                <xbox_360>XBox 360</xbox_360>
+                <xbox_one>XBox One</xbox_one>
+            </fields_mailchimp_microplay>
+            <fields_mailchimp_microplay_field>
+                <store_name>MMERGE17</store_name>
+                <email>EMAIL</email>
+                <firstname>FNAME</firstname>
+                <lastname>LNAME</lastname>
+                <language>language</language>
+                <need_newsletter>NEWSLETTER</need_newsletter>
+                <magazines>GPLATFORM</magazines>
+                <nintendo_64>GPLATFORM</nintendo_64>
+                <nintendo_3ds>3DS</nintendo_3ds>
+                <nintendo_8_bit>N8BIT</nintendo_8_bit>
+                <nintendo_ds>NDS</nintendo_ds>
+                <nintendo_switch>NSWITCH</nintendo_switch>
+                <other_technology>GPLATFORM</other_technology>
+                <playstation>GPLATFORM</playstation>
+                <playstation_2>GPLATFORM</playstation_2>
+                <playstation_3>PS3</playstation_3>
+                <playstation_4>PS4</playstation_4>
+                <ps_vita>PSV</ps_vita>
+                <gb_advance>GPLATFORM</gb_advance>
+                <game_boy>GPLATFORM</game_boy>
+                <game_cube>GPLATFORM</game_cube>
+                <electronics>GPLATFORM</electronics>
+                <super_nintendo>SNINTENDO</super_nintendo>
+                <xbox>GPLATFORM</xbox>
+                <pc>GPLATFORM</pc>
+                <wii>WII</wii>
+                <wii_u>WIIU</wii_u>
+                <xbox>GPLATFORM</xbox>
+                <xbox_360>XBOX360</xbox_360>
+                <xbox_one>XBOX1</xbox_one>
+            </fields_mailchimp_microplay_field>
+        </datas>
+    </default>
+</config>

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="template_mailchimp_import" label="Template Mail Mailchimp Import" file="template_mailchimp_import.html" type="html" module="Videoscm_MailChimpImport" area="frontend"/>
+</config>
